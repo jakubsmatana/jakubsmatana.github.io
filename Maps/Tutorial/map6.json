@@ -1,0 +1,18 @@
+{
+    "gridSize": 3,
+    "players": [
+        {"x": 3, "y": 0},
+        {"x": 2, "y": 0}
+    ],
+    "cells": [
+        {"x": 0, "y": 0, "walls": ["left","up"]},
+        {"x": 1, "y": 0, "walls": ["up"]},
+        {"x": 2, "y": 0, "walls": ["right","up","down"]},
+        {"x": 0, "y": 1, "walls": ["left"]},
+        {"x": 1, "y": 1, "walls": []},
+        {"x": 2, "y": 1, "walls": ["right","up"]},
+        {"x": 0, "y": 2, "walls": ["left","down"], "food": true},
+        {"x": 1, "y": 2, "walls": ["down"]},
+        {"x": 2, "y": 2, "walls": ["right","down"]}
+    ]
+  }
