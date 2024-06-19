@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+
+    <div id = "mapEdit">
+        <div style="margin-bottom: 5px;">
+            <input type="number" id="gridSizeInput" value="6" min="1" max="20">
+            <button onclick="updateGridSize()">Set Grid Size</button>
+        </div>
+        
+        <div id="mapGrid"></div>
+
+
+
+        <div id="toolSelectionContainer">
+            <label for="toolSelector">Tool:</label>
+            <select id="toolSelector">
+                <option value="None">Select Tool</option>
+                <option value="wall">Wall</option>
+                <option value="food">Food</option>
+                <option value="player">Player</option>
+                <option value="teleport">Teleport</option>
+                <option value="switch">Switch</option>
+                <option value="gate">Gate</option>
+            </select>
+
+
+            <div id="orientationSelector" style="display: None;">
+                <label for="orientation">Orientation:</label>
+                <select id="orientation">
+                    <option value="up">Up</option>
+                    <option value="down">Down</option>
+                    <option value="left">Left</option>
+                    <option value="right">Right</option>
+                </select>
+            </div>
+        </div>
+        <div id="selectedToolDisplay">Selected Tool: None</div>
+        <div style="margin-top: 5px; width: 100%;">
+            <button id="displayMapData">Display Map Data</button>
+            <input type="file" style='margin-left: 20px;' id="jsonFileInput" accept=".json">
+            <button id="importMap">Import Map</button>
+        </div>
+
+
+        <a href="index.html">Back to Game</a>
+    </div>
+    <div id="mapDataDisplay"></div>
+    <script src="src/mapEditor.js"></script>
+
+    
+</body>
+</html>

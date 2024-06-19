@@ -1,0 +1,24 @@
+{
+    "gridSize": 4,
+    "players": [
+        {"x": 3, "y": 1}
+    ],
+    "cells": [
+        {"x": 0, "y": 0, "walls": ["left","up"]},
+        {"x": 1, "y": 0, "walls": ["up"]},
+        {"x": 2, "y": 0, "walls": ["up","down"]},
+        {"x": 3, "y": 0, "walls": ["right","up"]},
+        {"x": 0, "y": 1, "walls": ["left","down"]},
+        {"x": 1, "y": 1, "walls": ["right"]},
+        {"x": 2, "y": 1, "walls": ["left","right","up"], "food": true},
+        {"x": 3, "y": 1, "walls": ["left","right","down"]},
+        {"x": 0, "y": 2, "walls": ["left","up"]},
+        {"x": 1, "y": 2, "walls": []},
+        {"x": 2, "y": 2, "walls": []},
+        {"x": 3, "y": 2, "walls": ["right","up"]},
+        {"x": 0, "y": 3, "walls": ["left","down"]},
+        {"x": 1, "y": 3, "walls": ["right","down"]},
+        {"x": 2, "y": 3, "walls": ["left","down"]},
+        {"x": 3, "y": 3, "walls": ["right","down"]}
+    ]
+}

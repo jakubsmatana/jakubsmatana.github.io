@@ -1,0 +1,200 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+}
+
+#mapDataDisplay {
+    flex: 1;
+}
+#mapEdit{
+    flex: 1;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#mapDataDisplay {
+    overflow: auto; 
+    border-left: 1px solid #ccc; 
+    padding: 10px;
+    white-space: pre;
+}
+
+.parent-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center; 
+    height: 100vh;
+}
+
+#gameContainer {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+#gameCanvas {
+    border: 1px solid black;
+}
+
+#toolSelectionContainer {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#orientationSelector {
+    display: flex;
+    align-items: center;
+}
+
+#gameControls {
+    flex-grow: 1; 
+    text-align: center;
+
+}
+
+.arrow-button {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.grid-cell {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.has-teleport::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35%;
+    height: 70%; 
+    background: radial-gradient(ellipse at center, 
+                                rgba(173, 216, 230, 1) 0%, 
+                                rgba(135, 206, 250, 1) 30%, 
+                                rgba(0, 147, 233, 1) 70%, 
+                                rgba(0, 47, 75, 1) 100%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: portalGlow 2s infinite alternate;
+}
+
+@keyframes portalGlow {
+    from {
+        box-shadow: 0 0 10px 2px rgba(0, 147, 233, 0.7);
+    }
+    to {
+        box-shadow: 0 0 20px 4px rgba(0, 147, 233, 1);
+    }
+}
+
+
+#mapGrid {
+    display: grid;
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+}
+.has-right-wall {
+    border-right: 3px solid black;
+}
+
+.has-left-wall {
+    border-left: 3px solid black;
+}
+.has-down-wall {
+    border-bottom: 3px solid black;
+}
+
+.has-up-wall {
+    border-top: 3px solid black;
+}
+
+.has-right-gate {
+    border-right: 3px dashed red;
+}
+
+.has-left-gate {
+    border-left: 3px dashed red;
+}
+.has-down-gate {
+    border-bottom: 3px dashed red;
+}
+
+.has-up-gate {
+    border-top: 3px dashed red;
+}
+
+.has-food::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20%;
+    height: 20%;
+    background-color: black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.has-player {
+    position: relative;
+}
+
+.has-player::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 40%;
+    background-color: red;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#selectedToolDisplay {
+    width: 490px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.has-switch::before {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: 20%;
+    height: 10%;
+    background-color: #8B4513;
+    transform: translateX(-50%);
+}
+
+.has-switch::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 5%;
+    height: 20%;
+    background-color: #C0C0C0;
+    transform: translateX(-50%);
+}
