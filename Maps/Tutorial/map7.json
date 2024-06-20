@@ -1,0 +1,51 @@
+{
+  "gridSize": 5,
+  "players": [
+      {"x": 4, "y": 0}
+  ],
+  "cells": [
+      {"x": 0, "y": 0, "walls": ["left","right","up"], "food": true},
+      {"x": 1, "y": 0, "walls": ["left","up"], "food": true},
+      {"x": 2, "y": 0, "walls": ["up"]},
+      {"x": 3, "y": 0, "walls": ["up","down"]},
+      {"x": 4, "y": 0, "walls": ["right","up"]},
+      {"x": 0, "y": 1, "walls": ["left"]},
+      {"x": 1, "y": 1, "walls": []},
+      {"x": 2, "y": 1, "walls": []},
+      {"x": 3, "y": 1, "walls": ["up"]},
+      {"x": 4, "y": 1, "walls": ["right","down"]},
+      {"x": 0, "y": 2, "walls": ["left","right"]},
+      {"x": 1, "y": 2, "walls": ["left"]},
+      {"x": 2, "y": 2, "walls": ["right"]},
+      {"x": 3, "y": 2, "walls": ["left"]},
+      {"x": 4, "y": 2, "walls": ["right","up"]},
+      {"x": 0, "y": 3, "walls": ["left"]},
+      {"x": 1, "y": 3, "walls": []},
+      {"x": 2, "y": 3, "walls": ["right"]},
+      {"x": 3, "y": 3, "walls": ["left"], "food": true},
+      {"x": 4, "y": 3, "walls": ["right"]},
+      {"x": 0, "y": 4, "walls": ["left","right","down"], "food": true},
+      {"x": 1, "y": 4, "walls": ["left","down"], "food": true},
+      {"x": 2, "y": 4, "walls": ["down"]},
+      {"x": 3, "y": 4, "walls": ["down"]},
+      {"x": 4, "y": 4, "walls": ["right","down"]}
+  ],
+  "gate": {
+      "cells": [
+            {
+                  "orientation": "left",
+                  "x": 1,
+                  "y": 1
+              },
+            {
+                  "orientation": "right",
+                  "x": 0,
+                  "y": 1
+            }
+      ],
+      "switch": {
+            "x": 2,
+            "y": 4
+      }
+}
+}
