@@ -17,7 +17,7 @@ const folderSelector = document.getElementById('folderSelector');
 const mapPools = [
     {
         path : 'Maps/Tutorial',
-        size : 6
+        size : 7
     },
     {
         path : 'Maps/One Player as Two',
