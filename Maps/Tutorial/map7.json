@@ -1,7 +1,7 @@
 {
   "gridSize": 5,
   "players": [
-      {"x": 4, "y": 0}
+      {"x": 4, "y": 1}
   ],
   "cells": [
       {"x": 0, "y": 0, "walls": ["left","right","up"], "food": true},
